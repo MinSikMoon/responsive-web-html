@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,61 @@
     <title>Document</title>
     <style>
         /* 가변 패딩 */
-        #wrap{
-            width:90%; /* 최상위 박스는 임의의 값으로 보통 너빗값을 정한다. 하지만 기획디자인에서 이정도 크기로 만들자는 의도보여줄수 있음. */
+        #wrap-calc-margin {
+            width: 90%;
+            /* 최상위 박스는 임의의 값으로 보통 너빗값을 정한다. 하지만 기획디자인에서 이정도 크기로 만들자는 의도보여줄수 있음. */
             /* 960px */
-            height:500px;
-            margin:0 auto;
+            height: 500px;
+            margin: 10px auto 10px auto;
             border: 1px solid #000;
         }
 
-        #wrap div{
-            width:calc(100%-100px);
+        #wrap-calc-margin div {
+            width: calc(100%-100px);
             /* 300/960 */
-            height:200px;
-            margin:50px;
+            height: 200px;
+            margin: 50px;
             background: green;
+        }
+
+        #wrap-calc-padding {
+            width: 90%;
+            height: 500px;
+            margin: 10px auto 10px auto;
+            border: 1px solid black;
+        }
+
+        #container {
+            width: 100%;
+            display: inline-block;
+        }
+
+        #container div:first-child {
+            width: 20%;
+            height: 100px;
+            background: blue;
+        }
+
+        #container div:first-child+div {
+            width: 60%;
+            height: 200px;
+            background: red;
         }
     </style>
 </head>
+
 <body>
-    <div id="wrap">
+    <div id="wrap-calc-margin">
         <div></div>
     </div>
+
+    <div id="wrap-calc-padding">
+        <div id="container">
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
 </body>
+
 </html>

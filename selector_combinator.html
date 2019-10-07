@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* multiple choice */
+        h1, h3{
+            color : green;
+        }
+
+        /* hierarchy */
+        ul li {
+            color : red;
+        }
+
+        /* style도 순서가 있다. class가 순서가 높음. */
+        .item{
+            color:blue
+        }
+
+         /* style override, old one is overwritten by new one */
+        ul li {
+            color : pink;
+        }
+        /* 복수의 아이템에 class 쓰고 특정에는 id써라 */
+        #list-item{
+            color : darkblue;
+        }
+
+        /* property */
+        input[type="text"]{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>h1 입니다.</h1>
+    <h3>h3 입니다.</h3>
+
+    <ul>
+        <li class="item" id="list-item">html5</li>
+        <li class="item">css3</li>
+    </ul>
+
+    <input type="text">
+    <input type="email">
+</body>
+</html>

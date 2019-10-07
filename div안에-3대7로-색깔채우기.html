@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+CSS Setting height and width
+The height and width properties are used to set the height and width of an element.
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div안에 3대 7로 색깔 채우기</title>
+    <style>
+        #wrapper {
+            border: 1px solid black;
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+        }
+        /* float : left 쓰니까 되네. */
+        /* 
+        The float property specifies how an element should float.
+        Note: Absolutely positioned elements ignores the float property!
+        Note: Elements after a floating element will flow around it. To avoid this, use the clear property or the clearfix hack (see example at the bottom of this page).
+         */
+        #first {
+            background: green;
+            width: 30%;
+            height: 100%;
+            float:left;
+        }
+        #second {
+            background: red;
+            width: 70%;
+            height: 100%;   
+            float:left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="first"></div>
+        <div id="second"></div>
+    </div>
+</body>
+
+</html>
