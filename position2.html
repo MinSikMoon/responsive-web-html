@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: orangered;
+            width: 700px;
+            height: 600px;
+            /* position 속성을 지정하지 않으면 디폴트는 static이다. */
+            /* vieport 단위이다. */
+            position: fixed;
+            top: 20px;
+            left: px;
+        }
+
+        .box {
+            width: 350px;
+            height: 100px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .box-1 {
+            background-color: green;
+            position: absolute;
+            /* 부모의 position 속성에 따라 어디에 붙을 지 변한다. */
+            /* 부모중 static이 아닌 요소의 위치를 기준으로 상대적 offset 설정 */
+            /*  bottom: 0px; */
+            top: 50px;
+            left: 200px;
+        }
+
+        .box-2 {
+            background-color: royalblue;
+            z-index: 10;
+            /* position이 static이면 소용없다. */
+            position: relative;
+        }
+
+        .box-3 {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1">box 1</div>
+        <div class="box box-2">box 2</div>
+        <div class="box box-3">box 3</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sunt aut officiis illo odio! Ab, debitis eum.
+        Excepturi dolorum molestiae, illo voluptates laborum autem quis fugiat fugit quaerat quibusdam maxime
+        necessitatibus harum a. Ut impedit voluptates laborum eligendi optio quo praesentium reprehenderit odit earum! A
+        at aliquam quaerat neque ab sed laudantium. Eius, numquam facilis laboriosam sapiente iste perferendis tenetur,
+        illo commodi doloribus nemo nulla eos voluptatem maxime aspernatur debitis, asperiores corrupti sunt obcaecati
+        minus quos! Incidunt non, cupiditate corrupti tempore consectetur voluptatum vel exercitationem. Dignissimos
+        iure ipsam sint tempora culpa eos, suscipit vero dolores dolore eaque quibusdam qui unde, voluptas, veritatis
+        sunt? Culpa consectetur est commodi natus blanditiis laudantium, minus adipisci tempora sunt impedit. Repellat
+        distinctio reiciendis cum et non soluta beatae culpa, pariatur minus vero sunt, est sed quam quis optio ipsa.
+        Excepturi eaque sint, impedit atque quidem omnis odit pariatur distinctio quisquam odio voluptate doloremque
+        cumque! Nulla consectetur nisi quaerat quo exercitationem iure! Ratione excepturi tempora, adipisci repellendus
+        amet architecto commodi tempore harum dolores temporibus fuga dolorum dolorem, incidunt perspiciatis placeat
+        cumque! Aliquid minima reprehenderit est commodi atque voluptatem quisquam id doloribus, consectetur, expedita
+        eius cumque? Accusamus ullam laboriosam quis fuga, quisquam exercitationem repudiandae perspiciatis tenetur
+        facere hic quibusdam consequatur dolore nisi labore vero natus numquam voluptate tempora deleniti explicabo
+        aliquid inventore optio odit? Ea reiciendis deserunt necessitatibus molestias cupiditate quasi. Non nihil amet
+        eos, voluptates iste sit ducimus tempora distinctio quasi ratione quod libero natus delectus sunt eum veniam,
+        laborum, doloremque placeat magni commodi omnis accusantium mollitia? Veritatis neque ad possimus. Architecto
+        accusantium delectus nostrum commodi quos facere culpa quae reprehenderit dolore voluptatibus odit dolores
+        ipsam, dolorum modi dolor iste libero optio vel totam cumque mollitia laboriosam! Facilis ad, rem totam deserunt
+        error suscipit iste optio excepturi vel velit non, alias sapiente labore modi recusandae officiis odit vitae
+        soluta aut iusto? Ipsam quae porro itaque magni soluta ab, illo cumque veniam. Sed, in nihil. Laudantium magni,
+        aliquid asperiores maxime odio, doloremque ut, minima magnam eos dolorum laborum. Dolores exercitationem rerum
+        omnis autem non possimus labore maiores aperiam saepe illo quam molestias repellendus voluptatibus unde earum,
+        architecto nam cumque eos ea quae consequatur aliquid tempore. Ut reprehenderit rerum iusto odit animi aliquam
+        doloremque temporibus assumenda. Ratione rem autem culpa similique recusandae qui id? Nemo, dolores? Similique
+        nostrum temporibus quaerat eligendi consectetur laudantium quisquam earum sapiente explicabo. Laboriosam quasi
+        aliquid assumenda debitis modi distinctio sint nemo et deleniti eaque nam at, exercitationem blanditiis?
+        Asperiores autem vitae ullam facere nesciunt debitis assumenda doloribus adipisci aspernatur magni voluptas et
+        provident, ab tempora vero consequatur quo possimus! Libero amet sint doloremque quos? Mollitia veniam eos quos
+        accusamus iste aperiam, id asperiores voluptatum minima quisquam eum sit quasi, ab corporis impedit. Vero, ipsum
+        dicta tenetur doloremque corporis deleniti quia quas dolor at et, quae praesentium asperiores suscipit veritatis
+        provident nostrum nisi minima omnis? Impedit minima perferendis totam debitis illo quaerat veritatis iusto,
+        reprehenderit quisquam mollitia facilis optio quasi et natus placeat molestiae tenetur modi alias distinctio ad
+        pariatur nemo magni voluptatum vitae!</p>
+</body>
+
+</html>
