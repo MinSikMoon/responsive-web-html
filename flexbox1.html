@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 700px;
+            margin-top: 50px;
+            /*  padding: 20px 0; */
+            background-color: #f19861;
+            display: flex;
+            /* 갑자기 옆으로 정렬될거임. */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /* flex-flow: row wrap; */
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: center;
+        }
+
+        .item {
+            width: 70px;
+            padding: 30px;
+            margin: 10px;
+            background-color: #06af8f;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .item-1 {
+            width: 200px;
+            order: 1;
+            /*  font-size: 70px; */
+            flex-grow: 5;
+        }
+
+        .item-5 {
+            width: 20px;
+            order: -1;
+            align-self: stretch;
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+
+</html>
