@@ -1,20 +1,46 @@
 /* common styles */
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    /* 10/16 * 100 = 62.5*/
-    /* 기본이 16px인데 10px로 바꾸고 싶다. */
+  font-size: 62.5%;
+  box-sizing: border-box;
+  /* 10/16 * 100 = 62.5*/
+  /* 기본이 16px인데 10px로 바꾸고 싶다. */
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-    font-size: 3rem;
-    /* 기본을 10px로 맞춰놨으니 30px이 된다. */
+  font-size: 1rem;
+  /* 기본을 10px로 맞춰놨으니 30px이 된다. */
 }
+
+/* navbar */
+/* sidebar */
+.sidebar {
+  width: 8rem;
+  height: 100%;
+  background-color: #eee;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+}
+
+.line {
+  height: 0.2rem;
+  width: 2.5rem;
+  background-color: #222;
+  margin-bottom: 0.6rem;
+}
+
+/* end sidebar */
+/* end navbar */
 
 /* end of common styles */
