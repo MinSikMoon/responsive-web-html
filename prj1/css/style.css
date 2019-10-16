@@ -78,6 +78,12 @@ p {
   color: #555;
 }
 /* end sidebar */
+/* navigation */
+.navigation {
+  margin-left: 8rem;
+  position: fixed;
+}
+/* end of navigation */
 /* end navbar */
 
 /* end of common styles */
