@@ -28,6 +28,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .menu-icon {
@@ -80,7 +81,8 @@ p {
 /* end sidebar */
 /* navigation */
 .navigation {
-  margin-left: 8rem;
+  /* margin-left: 8rem; */
+  left: -32rem;
   position: fixed;
   width: 40rem;
   height: 100%;
@@ -192,6 +194,15 @@ p {
 .navigation-link:hover::before,
 .navigation-link:hover::after {
   width: 3rem;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox:checked {
 }
 /* end of navigation */ /* end navbar */
 /* end of common styles */

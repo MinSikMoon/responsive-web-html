@@ -48,6 +48,15 @@
   하지만 명시적으로 left나 top 값을 지정안해주면 부모 기준으로 있어야 될 offset들이 자동으로 지정된다.
   부모와의 링크가 끊긴다. 그래서 부모가 없어지면서 width값을 못정하니까 content값 만큼 커진다.
   하지만 부모가 relative라면 부모 기준으로 달라 붙는다. 즉 static이 아닌 부모를 추적해서 그걸 offset기준으로 본다.
+- label 태그는 뭔가?
+
+```html
+The <label> tag defines a label for a <button>, <input>, <meter>, <output>, <progress>, <select>, or <textarea> element.
+
+The <label> element does not render as anything special for the user. However, it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control.
+
+The for attribute of the <label> tag should be equal to the id attribute of the related element to bind them together.
+```
 
 # 키워드
 
